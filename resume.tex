@@ -1,0 +1,180 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry for photo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\usepackage{xcolor}
+
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{gray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{orange}
+\colorlet{heading}{cyan}
+\colorlet{emphasis}{cyan}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Dimosthenis Iliadis-Apostolidis}
+
+\tagline{Master of Engineering (MEng), Electrical and Computer Engineer \\ \\ \\ \\ }
+
+\photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+
+    \email{iliadisdimos@protonmail.com}
+
+    \phone{+30 6958466332}
+    \location{Entison 9, Pallini Attica, 15351}
+    \vspace{0.5em}
+    \github{iliadisd}{https://github.com/iliadisd}
+    \linkedin{Dimosthenis Iliadis-Apostolidis}{https://www.linkedin.com/in/dimosthenis-iliadis-apostolidis/}
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{(ARM) Assembly}{5} 
+    \skill{Bash}{4}
+    \skill{C}{5}
+    \skill{C++}{5}
+    \skill{HTML}{3}
+    \skill{Java}{3}
+    \skill{LaTeX}{4}
+    \skill{MATLAB}{4}
+    \skill{Python}{3}
+    \skill{R}{5}
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Linux}{5}
+    \skill{MacOS}{4}
+    \skill{Windows}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Notable Sectors}
+    \skill{Embedded Systems}{5}
+    \textcolor{white}{(e.g. (ARM) Keil uVision, Raspberry Pi, ...)}\\
+    \skill{FPGA Acceleration}{5}
+    \textcolor{white}{(e.g. Vivado HLS, Vitis, ...)}\\
+    \skill{Parallel Computing}{5}
+    \textcolor{white}{(e.g. Pthreads, CUDA, OpenMP, MPI, ...)}\\
+    \skill{Performance Analysis}{5}
+    \textcolor{white}{(e.g. Intel Vtune Profiler, gem5, ...)}\\
+    \skill{Data handling/analysis}{4}
+    \textcolor{white}{(e.g. RStudio)}\\
+    \skill{Git}{4}
+    \skill{Docker}{4}
+    \skill{Office}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{Greek (Native)}{5}
+    \skill{English (C2)}{5}
+    \skill{German (B1)}{2}
+    \bigskip
+    
+\iffalse
+    \section{Certificates}
+    \simpleskill{AWS certified cloud practitioner}
+\fi
+}
+\mainbar{
+    \section{General Info}
+    Dimosthenis is an Electrical and Computer Engineer with great passion towards Computer Architecture. During his studies, he learned how to work in a group as well as solo, by completing several projects, mandatory for many courses of the University's Curriculum. This led to gaining a great piece of knowledge in several sectors by working with people that excel in what they currently do, as well as sharing his skills and contributing in anything that has to do with his strong suits.
+    \newline
+    \newline
+    He is currently seeking to gain a great piece of knowledge and experience, by taking on a challenging job position both when it comes down to the everyday tasks and goals that have to be met. Dimosthenis is looking forward to working with people of the industry and getting to know the environment of it. 
+    
+    \section[\faMortarBoard]{Education}
+    \job{09/2015 - 12/2021}
+        {Aristotle University of Thessaloniki}
+        {Master of Engineering}
+        {School of Electrical and Computer Engineering}
+
+    During his studies, Dimosthenis came across with challenging experiences by completing all the necessary labs and projects that the curriculum offered. After these studies he has become proficient at C and C++ Programming as well as several sectors such as Computer Architecture and others. This is a result of completing hands-on projects and by working with colleagues and solo gaining experience of solving real-world problems.
+    \newline
+    \newline
+    Dimosthenis' Thesis was a big part of acquiring knowledge while getting the degree. He got to work with people who have a great piece of experience in many fields of study. The title of his Thesis was "Homomorphic Encryption using Microsoft SEAL and FPGA acceleration" and it was graded with a 10/10. By the title, one can understand what this thesis had to do with; Developing (Hardware) code regarding innovative cryptographic algorithms in C and C++, by taking advantage of the Microsoft SEAL library; Using the method of C Synthesis to create the RTL Designs and the HDL produced by this procedure; Utilizing state-of-the-art Hardware/FPGA of Alveo U200 Data Accelerator Card to get useful conclusions and promising results towards accelerating costly operations of Homomorphic Encryption algorithms. An acceleration of 92.66X regarding a certain algorithm was achieved, by putting all the work and the effort necessary to do this into this whole experience.
+    
+    \section[\faGears]{Work Experience}
+    \job{01/2022 - now}
+        {Hellenic Airforce}
+        {IT Support \& Server Engineer}
+        
+        During his mandatory military service and due to his education, Dimosthenis got the chance to work at this position. In this position, he developed some skills regarding basic IT support tasks, as well as getting hands-on experience with servers, both having to do with Hardware (System Setup and Faults Repair) and Software (Sysadmin).
+    
+
+\iffalse
+
+    \section{Achievements, honours and awards}
+    \achievement{My first achievement}
+    \achievement{My second achievement}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Tag 1}
+    \tag{Tag 2}
+    \tag{and}
+    \tag{another tag}
+    \tag{some more tags}
+    \tag{yet another one}
+    \tag{tags flow over}
+    \tag{to the next line}
+    \tag{if necessary}
+    
+    \medskip
+    Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+    
+    \section{Wheel Chart}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+        6/8em/accent!20/Sleep,          % comma-separated list of
+        8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+        2/8em/accent!80/Training,          % here, the color is shades of the accent color
+        3/8em/accent!60/Recovering from fighting criminals,
+        5/8em/accent/Being Batman
+    }
+\fi
+}
+\makebody
+\clearpage
+
+\end{document}
