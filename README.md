@@ -1,2 +1,2 @@
 # my-resume
-### My resume was written in LaTeX, by utilizing Overleaf.  
+### My Resume was written in LaTeX, by utilizing Overleaf.  
